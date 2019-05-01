@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4c-q2-7w1">
+                                <rect key="frame" x="38.5" y="210.5" width="298" height="246"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Egg Master" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-Yc-u2c">
+                                        <rect key="frame" x="0.0" y="174.5" width="298" height="71.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.75" alpha="0.71508454623287676" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="3"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eggImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="xN6-Fp-wsm">
+                                        <rect key="frame" x="61" y="0.0" width="176" height="166.5"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xN6-Fp-wsm" firstAttribute="leading" secondItem="P4c-q2-7w1" secondAttribute="leading" constant="61" id="0Mn-N8-cRo"/>
+                                    <constraint firstAttribute="bottom" secondItem="GSX-Yc-u2c" secondAttribute="bottom" id="3Ez-Xc-Ytc"/>
+                                    <constraint firstAttribute="width" constant="298" id="DG7-Yf-nOb"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSX-Yc-u2c" secondAttribute="trailing" id="H7Z-dv-cbb"/>
+                                    <constraint firstAttribute="trailing" secondItem="xN6-Fp-wsm" secondAttribute="trailing" constant="61" id="OWq-f3-CsM"/>
+                                    <constraint firstAttribute="height" constant="246" id="Z20-AW-OLd"/>
+                                    <constraint firstItem="GSX-Yc-u2c" firstAttribute="leading" secondItem="P4c-q2-7w1" secondAttribute="leading" id="dPu-8W-fjp"/>
+                                    <constraint firstItem="GSX-Yc-u2c" firstAttribute="top" secondItem="xN6-Fp-wsm" secondAttribute="bottom" constant="8" id="qCn-Br-eUf"/>
+                                    <constraint firstItem="xN6-Fp-wsm" firstAttribute="top" secondItem="P4c-q2-7w1" secondAttribute="top" id="se2-ao-MnS"/>
+                                    <constraint firstItem="GSX-Yc-u2c" firstAttribute="top" secondItem="xN6-Fp-wsm" secondAttribute="bottom" constant="8" id="wnp-bO-wQs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.77647058820000003" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P4c-q2-7w1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3RY-gS-Ffb"/>
+                            <constraint firstItem="P4c-q2-7w1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="e8X-ng-uOY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eggImage.png" width="500" height="500"/>
+    </resources>
+</document>
